@@ -1,6 +1,6 @@
 ### HRPG
 
-!()[hrpg.gif]
+![](hrpg.gif)
 
 Yet another unfinished terminal game.
 
