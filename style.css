@@ -1,0 +1,96 @@
+body {
+	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	padding: 50px;
+	-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-drag: none;-khtml-user-select: none;-moz-user-select: none;-moz-user-select:-moz-none;-ms-user-select: none;user-select: none;
+}
+
+@keyframes greenPulse {
+  from { color: #ffffff; }
+  to { color: rgb(50,200,50);  }
+}
+
+.glow {
+	animation: greenPulse 500ms;
+}
+
+.buttonsarea {
+    text-align:center;
+    border: 2px solid rgb(25,100,25);
+    border-radius: 5px;
+    display:block;
+    overflow:auto;
+    position:absolute;
+    padding:0;
+    left: 50%;
+    margin-right: -50%;
+    margin-top:10px;
+    margin-bottom:10px;
+    transform: translate(-50%, 0);
+    max-width:61%;
+    max-height:50%;
+    animation: reveal 500ms ease-in-out 0s;
+    transition: opacity 50ms ease-in-out 450ms, 
+            max-height 250ms ease-in-out 0ms, 
+            margin 500ms ease-in-out 0ms,
+            max-width 195ms ease-in-out 305ms;
+    opacity: 1;
+}
+
+.buttonsarea::-webkit-scrollbar { 
+    display: none; 
+}
+
+@keyframes reveal {
+    0% {    max-width:0; max-height:0;    }
+    50% {    max-width:61%; max-height:0;    }
+    100% {  max-width:61%; max-height:50%;   }
+}
+
+.button {
+    display:inline-block;
+    animation: greenPulse 500ms ease-in-out 250ms;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    animation: waving 900ms ease-in-out 0s  infinite;
+}
+
+@keyframes waving {
+	0% {	  	background-color:rgb(22,20,22);	}
+	33%{		background-color:rgb(25,50,25); }
+	100%{		background-color:rgb(22,20,22); }
+}
+
+.attention {
+	animation: waving 900ms ease-in-out 0s  infinite;
+}
+
+.frontblink {
+	animation: greenPulseWithDelay 2000ms ease-in-out infinite;
+}
+
+@keyframes greenPulseWithDelay {
+  0% { color: rgb(50,150,55);  }
+  10% { color: rgb(25,100,25);  }
+  50% { color: rgb(25,100,25);  }
+  66% { color: rgba(50,200,50,0); }
+  100% {color: rgba(50,200,50,0);}
+}
+
+@keyframes greenCursor {
+  from { background-color: #ffffff; }
+  33% { background-color: rgb(50,200,50);  }
+  to { background-color: rgba(50,200,50,0); } 
+}
+
+.cursor {
+    animation: greenCursor 1000ms ease-in-out 0s  infinite;
+}
+
+.static {
+    background-color:rgb(22,20,22);
+}

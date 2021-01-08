@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="none">
+  <defs>
+
+  <radialGradient id="paint" cx="50%" cy="50%" r="99%">
+   <stop offset="0" stop-color="#000000"/>
+   <stop offset="1" stop-color="#001100"/>
+  </radialGradient>
+ 
+  <radialGradient id="reflex" cx="0%" cy="0%" r="100%">
+   <stop offset="0" stop-color="#00ff00" stop-opacity="0.1"/>
+   <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+  </radialGradient>
+  
+ </defs>
+
+  <path fill="url(#paint)" d="M0,40 l0,-40 l40,0 q-40,0 -40,40 Z" id="ul"  />
+  <path fill="url(#paint)" d="M0,40 l0,-40 l40,0 q-40,0 -40,40 Z" id="ur" transform="translate(400, 0) scale(-1, 1) " />
+  <path fill="url(#paint)" d="M0,40 l0,-40 l40,0 q-40,0 -40,40 Z" id="bl" transform="translate(0, 300) scale(1, -1) " />
+  <path fill="url(#paint)" d="M0,40 l0,-40 l40,0 q-40,0 -40,40 Z" id="br" transform="translate(400, 300) scale(-1, -1) " />
+  
+  <path fill="url(#reflex)" id="glass1" d="M0,100 l0,-60 q0,-40 40,-40 l60,0 0,100 Z" />
+  <path fill="url(#reflex)" id="glass2" d="M0,100 l0,-60 q0,-40 40,-40 l60,0 0,100 Z" transform="translate(400, 0) scale(-1, 1) " />
+  <path fill="url(#reflex)" id="glass3" d="M0,100 l0,-60 q0,-40 40,-40 l60,0 0,100 Z" transform="translate(0, 300) scale(1, -1) "/>
+  <path fill="url(#reflex)" id="glass4" d="M0,100 l0,-60 q0,-40 40,-40 l60,0 0,100 Z" transform="translate(400, 300) scale(-1, -1) " />
+  
+</svg>
