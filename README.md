@@ -24,8 +24,6 @@ There is only one place, the store. There are no vehicles, so you can not got an
 
 You would choose who you want to play 'as', and all other characters would turn into NPCs.
 
-It would probably turn into an x-rated game. (Demo is adapted for safe text.)
-
 *Live demo: [flaviocarrara.com/_hrpg](http://flaviocarrara.com/_hrpg)*
 
 ---
